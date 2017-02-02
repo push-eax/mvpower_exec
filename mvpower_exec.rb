@@ -15,7 +15,7 @@ class MetasploitModule < Msf::Exploit::Remote
             'License'        => MSF_LICENSE,
             'References'     => [
                 [ 'URL', 'https://www.pentestpartners.com/blog/pwning-cctv-cameras/' ],
-                [ 'URL', 'https://www.kiernanro.ch/blog/some_post']
+                [ 'URL', 'https://www.kiernanro.ch/blog/mvpower-exec']
             ], # TODO: Add blog post url
             'Platform'       => 'linux',
             'Arch'           => ARCH_ARMLE,
@@ -103,7 +103,7 @@ class MetasploitModule < Msf::Exploit::Remote
             'connection' => 'keep-alive'
         })
 
-        #stime = Time.now.to_f
+        #stime = Time.now.to_f # TODO: Fix session handling.
         #while (true)
             #break if session_created? && datastore['ExitOnSession']
             #break if res && res.code == 200
